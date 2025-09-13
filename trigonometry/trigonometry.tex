@@ -1,0 +1,205 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\usepackage[paperwidth=32cm,margin=1cm]{geometry}
+\pagestyle{empty}
+
+\usepackage{xcolor}
+% \pagecolor{white}
+
+\usepackage{colortbl}
+
+\begin{document}
+
+\begin{center}
+\colorbox{white}{\begin{tabular}{|l|l|l|l|}
+\hline
+
+\rowcolor{blue!20}
+\rule{0pt}{4ex}
+    \cellcolor{blue!30}
+    \textbf{Category} & 
+    \multicolumn{1}{c|}{\textbf{sin}} & 
+    \cellcolor{blue!30}
+    \textbf{cos} & 
+    \textbf{tan}
+    \rule[-1ex]{0pt}{0pt} \\
+\hline
+
+\rowcolor{blue!10}
+\multicolumn{4}{|c|}{
+    \rule{0pt}{4ex}
+    \textbf{Basic}} \\
+\hline
+
+    \rule{0pt}{4ex}\textbf{Basic Trigonometric} & 
+        $\boldsymbol{\textcolor{blue!80}{
+            \sin x}}$ & 
+        $\boldsymbol{\textcolor{teal!80}{
+            \cos x}}$ & 
+        $\boldsymbol{\textcolor{red!80}{
+            \tan x = \frac{\sin x}{\cos x}}}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Reciprocal} & 
+        $\csc x = \frac{1}{\sin x}$ & 
+        $\sec x = \frac{1}{\cos x}$ & 
+        $\cot x = \frac{\cos x}{\sin x}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Inverse} & 
+        $\begin{array}{c}
+            \arcsin x \\
+            \text{Domain: } [-1,1] \\
+            \text{Range: } [-\frac{\pi}{2}, \frac{\pi}{2}]
+        \end{array}$ & 
+        $\begin{array}{c}
+            \arccos x \\
+            \text{Domain: } [-1,1] \\
+            \text{Range: } [0, \pi]
+        \end{array}$ & 
+        $\begin{array}{c}
+            \arctan x \\
+            \text{Domain: } \mathbb{R} \\
+            \text{Range: } (-\frac{\pi}{2}, \frac{\pi}{2})
+        \end{array}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Hyperbolic} & 
+        $\sinh x = \frac{e^x - e^{-x}}{2}$ & 
+        $\cosh x = \frac{e^x + e^{-x}}{2}$ & 
+        $\tanh x = \frac{e^x - e^{-x}}{e^x + e^{-x}}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Reciprocal Hyperbolic} & 
+        $\text{csch } x = \frac{1}{\sinh x}$ & 
+        $\text{sech } x = \frac{1}{\cosh x}$ & 
+        $\coth x = \frac{1}{\tanh x}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+\rowcolor{blue!10}
+\multicolumn{4}{|c|}{
+    \rule{0pt}{4ex}
+    \textbf{Differentiation}} \\
+\hline
+
+    \rule{0pt}{4ex}\textbf{Derivatives} & 
+        $\frac{d}{dx}(\sin x) = \cos x$ & 
+        $\frac{d}{dx}(\cos x) = -\sin x$ & 
+        $\frac{d}{dx}(\tan x) = \sec^2 x$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Second Derivatives} & 
+        $\frac{d^2}{dx^2}(\sin x) = -\sin x$ & 
+        $\frac{d^2}{dx^2}(\cos x) = -\cos x$ & 
+        $\frac{d^2}{dx^2}(\tan x) = 2 \sec^2 x \tan x$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Derivatives of Reciprocal} & 
+        $\frac{d}{dx}(\csc x) = -\csc x \cot x$ & 
+        $\frac{d}{dx}(\sec x) = \sec x \tan x$ & 
+        $\frac{d}{dx}(\cot x) = -\csc^2 x$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Derivatives of Inverse} & 
+        $\frac{d}{dx}(\arcsin x) = \frac{1}{\sqrt{1-x^2}}$ & 
+        $\frac{d}{dx}(\arccos x) = -\frac{1}{\sqrt{1-x^2}}$ & 
+        $\frac{d}{dx}(\arctan x) = \frac{1}{1+x^2}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Derivatives of Hyperbolic} & 
+        $\frac{d}{dx}(\sinh x) = \cosh x$ & 
+        $\frac{d}{dx}(\cosh x) = \sinh x$ & 
+        $\frac{d}{dx}(\tanh x) = \text{sech}^2 x$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+\rowcolor{blue!10}
+\multicolumn{4}{|c|}{
+    \rule{0pt}{4ex}
+    \textbf{Integration}} \\
+\hline
+
+    \rule{0pt}{4ex}\textbf{Integrals} & 
+        $\int \sin x \, dx = -\cos x + C$ & 
+        $\int \cos x \, dx = \sin x + C$ & 
+        $\int \tan x \, dx = -\ln|\cos x| + C$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Integrals of Reciprocal} & 
+        $\int \csc x \, dx = -\ln|\csc x + \cot x| + C$ & 
+        $\int \sec x \, dx = \ln|\sec x + \tan x| + C$ & 
+        $\int \cot x \, dx = \ln|\sin x| + C$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Integrals of Inverse} & 
+        $\begin{array}{c}
+            \int \arcsin x \, dx = \\
+            x \arcsin x + \sqrt{1-x^2} + C
+        \end{array}$ & 
+        $\begin{array}{c}
+            \int \arccos x \, dx = \\
+            x \arccos x - \sqrt{1-x^2} + C
+        \end{array}$ & 
+        $\begin{array}{c}
+            \int \arctan x \, dx = \\
+            x \arctan x - \frac{1}{2}\ln(1+x^2) + C
+        \end{array}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Inverse Integral forms} & 
+        $\begin{array}{c}
+            \int \frac{dx}{x^2 + a^2} = \frac{1}{a} \arctan \frac{x}{a} + C
+        \end{array}$ & 
+        $\begin{array}{c}
+            \int \frac{dx}{\sqrt{a^2 - x^2}} = \arcsin \frac{x}{a} + C
+        \end{array}$ & 
+        $\begin{array}{c}
+            \int \frac{dx}{\sqrt{x^2 + a^2}} = \text{arcsinh} \frac{x}{a} + C
+        \end{array}$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Integrals of Hyperbolic} & 
+        $\int \sinh x \, dx = \cosh x + C$ & 
+        $\int \cosh x \, dx = \sinh x + C$ & 
+        $\int \tanh x \, dx = \ln(\cosh x) + C$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+\rowcolor{blue!10}
+\multicolumn{4}{|c|}{
+    \rule{0pt}{4ex}
+    \textbf{Miscellanous}} \\
+\hline
+
+    \rule{0pt}{4ex}\textbf{Power Reduction Formulas} & 
+        $\int \sin^2 x \, dx = \frac{1}{2}x - \frac{1}{4}\sin 2x + C$ & 
+        $\int \cos^2 x \, dx = \frac{1}{2}x + \frac{1}{4}\sin 2x + C$ & 
+        $\int \tan^2 x \, dx = \tan x - x + C$
+        \rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+    \rule{0pt}{4ex}\textbf{Exponential Integral} & 
+        $\int e^{ax} \sin bx \, dx = \frac{e^{ax}}{a^2 + b^2} (a \sin bx - b \cos bx) + C$ & 
+        $\int e^{ax} \cos bx \, dx = \frac{e^{ax}}{a^2 + b^2} (a \cos bx + b \sin bx) + C$ & 
+        $
+        $\rule[-1ex]{0pt}{0pt} \\
+    \hline
+
+\end{tabular}}
+\end{center}
+
+\end{document}
